@@ -1,0 +1,16 @@
+# 常用 ADB 命令（需电脑和 USB 调试）
+
+# 1. 查看设备连接状态
+adb devices
+
+# 2. 重启到 bootloader
+adb reboot bootloader
+
+# 3. 安装 APK
+adb install app.apk
+
+# 4. 卸载系统应用（需 root）
+adb shell pm uninstall -k --user 0 com.xxx.xxx
+
+
+---
