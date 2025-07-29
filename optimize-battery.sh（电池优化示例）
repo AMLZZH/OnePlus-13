@@ -1,0 +1,13 @@
+
+
+#!/bin/bash
+# 简单关闭后台耗电服务（需 root）
+
+echo "正在关闭高耗电服务..."
+pm disable-user --user 0 com.facebook.katana
+pm disable-user --user 0 com.instagram.android
+
+echo "✅ 电池优化完成！"
+
+
+---
