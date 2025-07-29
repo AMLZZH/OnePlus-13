@@ -1,0 +1,11 @@
+
+# 简单检测 Android 设备是否已 Root
+
+if [ "$(which su 2>/dev/null)" ]; then
+  echo "✅ 设备已 Root"
+else
+  echo "❌ 设备未 Root"
+fi
+
+
+---
